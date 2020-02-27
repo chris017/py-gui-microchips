@@ -1,0 +1,10 @@
+scriptFileName: 
+lcs: OP_READY
+capFileName: 
+printFileName: 
+keyFileName: C:\Users\schmidc4\eclipse-workspace\TstPy\src\GUI5\testcardproductionmock.py
+scp: 02
+interface: CB
+imageFileName: 
+testKeys: from JLoad key file
+platform: None
