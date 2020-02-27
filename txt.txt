@@ -1,10 +1,10 @@
-scriptFileName: 
-lcs: OP_READY
-capFileName: 
-printFileName: 
+scp: 03
+interface: CL
 keyFileName: C:\Users\schmidc4\eclipse-workspace\TstPy\src\GUI5\testcardproductionmock.py
-scp: 02
-interface: CB
-imageFileName: 
 testKeys: from JLoad key file
-platform: None
+platform: SLC52
+imageFileName: D:\portfolio\pyGUI\testcardproductionmock.py
+lcs: CARD_LOCKED
+scriptFileName: D:\portfolio\pyGUI\testcardsettings.py
+printFileName: D:\portfolio\pyGUI\testcardsettings.py
+capFileName: D:\portfolio\pyGUI\PrintingProgramm.py
