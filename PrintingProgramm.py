@@ -25,7 +25,7 @@ class ComboBoxFrame(wx.Frame):
         
         self.panel = wx.Panel(self, -1)
         self.SetBackgroundColour('#ffffff')
-        path = os.path.abspath("img/icon.png")
+        path = os.path.abspath("assets/img/icon.png")
         icon = wx.Icon(path, wx.BITMAP_TYPE_PNG)
         self.SetIcon(icon)
         #Create CB_DROPDOWN Buttons and save ability
@@ -114,13 +114,13 @@ class ComboBoxFrame(wx.Frame):
         fileMenu = wx.Menu()
         ope = wx.MenuItem(fileMenu, wx.ID_ANY, '&Open\tCtrl+O')
         self.Bind(wx.EVT_MENU, self.onOpenSaveFile, ope)
-        ope.SetBitmap(wx.Bitmap('img/open.png'))
+        ope.SetBitmap(wx.Bitmap('assets/img/open.png'))
         fileMenu.Append(ope)
         fileMenu.AppendSeparator()
         
         
         saf = wx.MenuItem(fileMenu, wx.ID_ANY, '&Save\tCtrl+S')
-        saf.SetBitmap(wx.Bitmap('img/save.png'))
+        saf.SetBitmap(wx.Bitmap('assets/img/save.png'))
         saf.SetTextColour('blue')
         self.Bind(wx.EVT_MENU, self.OnSave, saf)
         fileMenu.Append(saf)
@@ -134,7 +134,7 @@ class ComboBoxFrame(wx.Frame):
         
         
         qmi = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Quit\tCtrl+Q')
-        qmi.SetBitmap(wx.Bitmap('img/close.png'))
+        qmi.SetBitmap(wx.Bitmap('assets/img/close.png'))
         qmi.SetTextColour('red')
         fileMenu.Append(qmi)
         self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
@@ -143,7 +143,7 @@ class ComboBoxFrame(wx.Frame):
         refMenu = wx.Menu()
         self.link = ('https://www.linkedin.com/in/christian-schmid-8b4b1b16a')
         self.ref = wx.MenuItem(refMenu, wx.ID_ANY, self.link)
-        self.ref.SetBitmap(wx.Bitmap('img/avatar.png'))
+        self.ref.SetBitmap(wx.Bitmap('assets/img/avatar.png'))
         self.ref.SetTextColour('blue')
         self.Bind(wx.EVT_MENU, self.OnRef, self.ref)
         refMenu.Append(self.ref)
